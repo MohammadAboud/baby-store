@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, telephone=no"
+    />
+    <meta
+      name="google-site-verification"
+      content="s49xtYkDk9-BJW-0v8D5UOtzRcjncdKKcGbLTpzMEVs"
+    />
+    <!-- Security meta tag -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';"> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Open+Sans:wght@600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="preload stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="preload stylesheet" href="/style.css" as="style" />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/d6106b7600.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon" />
+
+    <script
+      src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"
+      defer
+    ></script>
+    <!-- Title -->
+    <title>Kidzania Kids Wear - Baby Store.</title>
+  </head>
+  <body>
+    <!-- Go Top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar container container--pall flex flex-jc-sb flex-fds-c">
+        <a class="logo" href="/"
+          ><img src="/logo.png" alt="logo" width="160"
+        /></a>
+        <ul class="nav-items flex-fds-c hide-for-mobile">
+          <li class="nav-links"><a href="#about">About us</a></li>
+          <li class="nav-links"><a href="#show-gallery">Show Gallery</a></li>
+          <li class="nav-links"><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Slideshow -->
+    <section
+      class="slideshow container container--pall flex flex-fds-c flex-jc-sb flex-fc-c"
+    >
+      <div class="slideshow-container">
+        <h1>Weaving Dreams.</h1>
+        <!-- Images with number and caption test -->
+        <div class="slideshow">
+          <div class="slide fade">
+            <img
+              src="slideshow/slide-1.jpeg"
+              alt="A photo"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="/slideshow/slide-2.jpg"
+              alt="A photo"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="/slideshow/slide-3.jpeg"
+              alt="A photo"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide fade">
+            <img src="/slideshow/slide-4.jpeg" alt="A photo" loading="lazy" />
+          </div>
+          <div class="slide fade">
+            <img src="/slideshow/slide-5.jpeg" alt="A photo" loading="lazy" />
+          </div>
+        </div>
+        <!-- Next & previous buttons -->
+        <button class="slide-btn prev" onclick="plusSlides(-1)">
+          <i class="fas fa-2x fa-chevron-left"></i>
+        </button>
+        <button class="slide-btn next" onclick="plusSlides(1)">
+          <i class="fas fa-2x fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- The dots/circles -->
+      <div class="dots" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container container--pall">
+        <h2>About the brand:</h2>
+        <div class="about-text flex flex-jc-sb flex-fds-c">
+          <div class="left">
+            <p>
+              Discover the cutest new baby clothes exclusively from Kidzania Wears😍. Shop adorable new arrivals for baby boys and baby girls.           
+            </p>
+          </div>
+          <div class="right">
+            <p>Baby & children's clothing store</p>
+            <ul>
+              <li>
+                <i class="fas fa-mitten"></i> Trendy Turkish Kid’s Clothing
+              
+              </li>
+              <li><i class="fas fa-mitten"></i> 📦Delivery in Lebanon
+              .</li>
+              <li><i class="fas fa-mitten"></i> ❌No refund - Exchange within 2 weeks.
+              </li>
+              <li><i class="fas fa-mitten"></i>  💵Cash on delivery.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Show gallery -->
+    <section class="show-gallery container container--pall" id="show-gallery">
+      <h2>The clothes:</h2>
+      <!-- Gallery Grid -->
+      <p>A small sample of what has been done and can be done:</p>
+      <div class="gallery" id="gallery">
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/gallery/showg-1.jpg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/gallery/showg-2.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/gallery/showg-3.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/gallery/showg-4.jpg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/gallery/showg-5.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/gallery/showg-6.jpg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/gallery/showg-7.jpg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/gallery/showg-8.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/gallery/showg-9.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/gallery/showg-10.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/gallery/showg-11.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- "See more" button -->
+      <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+        <p> <br>
+        </p>
+      <a href="gallery.html" class="button">See more</a>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="container container--pall">
+        <h2>Contact Us:</h2>
+        <div class="full-contact flex flex-jc-sb flex-fdm-c">
+          <div class="left-container flex flex-fc-c">
+            <p>You can send a message:</p>
+            <div class="form-container">
+              <form name="contact" method="post" data-netlify="true">
+                <div class="row1 flex flex-fc-c">
+                  <p>
+                    <label for="name">Name:</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Full Name"
+                      required="required"
+                    />
+                  </p>
+                  <p>
+                    <label for="tel">Telephone:</label>
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      placeholder="telephone (optional)"
+                    />
+                  </p>
+                </div>
+                <div class="row2">
+                  <p>
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                      required="required"
+                    />
+                  </p>
+                </div>
+
+                <div class="row3">
+                  <p>
+                    <label for="message">Message:</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Write your message here"
+                      required="required"
+                      maxlength="280"
+                    ></textarea>
+                  </p>
+                </div>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="right-container flex flex-jc-sb flex-fds-c">
+            <div class="contact-info">
+              <p>Or you can make enquiries and/or orders directly at:</p>
+              <div class="more-contact flex flex-fc-c">
+                <a href="tel:+961 81 889 218"
+                  ><i
+                    class="fab fa-whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    rel="nofollow"
+                  ></i>
+                  +961 81 889 218</a
+                >
+                <a
+                  href="https://www.instagram.com/kidzania_kidswear/"
+                  target="_blank"
+                  ><i class="fab fa-instagram" rel="noopener noreferrer"></i>
+                  @kidzania_kidswear</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="/"><img src="/logo.png" alt="logo" width="150" /></a>
+      <p>© Kadzania KidsWear | All rights reserved.</p>
+    </footer>
+
+    <!-- More Icons -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+    <!-- JavaScript -->
+    <script src="/app/js/main.js" defer></script>
+  </body>
+</html>
